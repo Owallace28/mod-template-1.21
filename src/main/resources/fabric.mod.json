@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "mod",
+	"version": "${version}",
+	"name": "Mod",
+	"description": "This is a mod by Oscar",
+	"authors": [
+		"Oscar"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.oscar.mod.Mod"
+		],
+		"fabric-datagen": [
+			"net.oscar.mod.ModDataGenerator"
+		],
+		"client": [
+			"net.oscar.mod.ModClient"
+		]
+	},
+	"mixins": [
+		"mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
