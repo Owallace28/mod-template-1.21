@@ -10,6 +10,8 @@ import net.oscar.mod.Mod;
 
 public class ModItems {
     public static final Item GALAXITE = registerItem("galaxite", new Item(new Item.Settings()));
+    public static final Item RAW_GALAXITE = registerItem("raw_galaxite", new Item(new Item.Settings()));
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Mod.MOD_ID, name), item);
@@ -20,6 +22,9 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(GALAXITE);
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
+            entries.add(RAW_GALAXITE);
         });
 
 

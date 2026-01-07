@@ -1,6 +1,14 @@
 {
   "item.mod.galaxite": "Galaxite",
+  "item.mod.raw_galaxite": "Raw Galaxite",
 
-  "itemgroup.mod.cosmic_items": "Cosmic Items"
+
+  "block.mod.galaxite_block": "Block of Galaxite",
+  "block.mod.raw_galaxite_block": "Block of Raw Galaxite",
+
+
+  "itemgroup.mod.cosmic_items": "Cosmic Items",
+  "itemgroup.mod.cosmic_blocks": "Cosmic Blocks"
+
 
 }

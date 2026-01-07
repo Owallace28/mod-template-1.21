@@ -8,14 +8,30 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.oscar.mod.Mod;
+import net.oscar.mod.block.ModBlocks;
 
 public class ModItemGroups {
     public static final ItemGroup COSMIC_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(Mod.MOD_ID, "cosmic_items"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.GALAXITE))
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.RAW_GALAXITE))
                     .displayName(Text.translatable("itemgroup.mod.cosmic_items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.GALAXITE);
+                        entries.add(ModItems.RAW_GALAXITE);
+
+
+
+
+
+                    }).build());
+    public static final ItemGroup COSMIC_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(Mod.MOD_ID, "cosmic_blocks"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.RAW_GALAXITE_BLOCK))
+                    .displayName(Text.translatable("itemgroup.mod.cosmic_blocks"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.GALAXITE_BLOCK);
+                        entries.add(ModBlocks.RAW_GALAXITE_BLOCK);
+
 
 
 
