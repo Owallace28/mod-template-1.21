@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "catagory": "building",
+  "ingredients": [
+    {
+      "item": "mod:raw_galaxite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "mod:raw_galaxite"
+  }
+}

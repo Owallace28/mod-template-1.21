@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "catagory": "misc",
+  "cookingtime": 200,
+  "experience": 0.2,
+  "group": "galaxite",
+  "ingredient": {
+    "item": "mod:raw_galaxite"
+  },
+  "result": {
+    "id": "mod:galaxite"
+  }
+}

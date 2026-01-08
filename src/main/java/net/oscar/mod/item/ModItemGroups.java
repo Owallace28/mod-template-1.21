@@ -18,6 +18,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.GALAXITE);
                         entries.add(ModItems.RAW_GALAXITE);
+                        entries.add(ModItems.STARLIGHT_ASHES);
 
 
 
@@ -31,6 +32,10 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.GALAXITE_BLOCK);
                         entries.add(ModBlocks.RAW_GALAXITE_BLOCK);
+
+                        entries.add(ModBlocks.GALAXITE_ORE);
+                        entries.add(ModBlocks.GALAXITE_DEEPSLATE_ORE);
+
 
 
 

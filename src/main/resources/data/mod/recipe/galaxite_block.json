@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "catagory": "misc",
+  "key": {
+    "#": {
+      "item": "mod:galaxite"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mod:galaxite_block"
+  }
+}

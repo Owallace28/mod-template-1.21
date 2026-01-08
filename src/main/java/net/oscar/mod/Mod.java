@@ -2,6 +2,7 @@ package net.oscar.mod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.oscar.mod.block.ModBlocks;
 import net.oscar.mod.item.ModItemGroups;
 import net.oscar.mod.item.ModItems;
@@ -17,6 +18,8 @@ public class Mod implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 30000);
 
 	}
 }

@@ -1,14 +1,21 @@
 {
-  "item.mod.galaxite": "Galaxite",
-  "item.mod.raw_galaxite": "Raw Galaxite",
+  "item.mod.galaxite": "§dGalaxite",
+  "item.mod.raw_galaxite": "§dRaw Galaxite",
+  "item.mod.starlight_ashes": "§dStarlight Ashes",
 
 
-  "block.mod.galaxite_block": "Block of Galaxite",
-  "block.mod.raw_galaxite_block": "Block of Raw Galaxite",
+  "block.mod.galaxite_block": "§dBlock of Galaxite",
+  "block.mod.raw_galaxite_block": "§dBlock of Raw Galaxite",
+
+  "block.mod.galaxite_ore": "§dGalaxite Ore",
+  "block.mod.galaxite_deepslate_ore": "§dGalaxite Deepslate Ore",
+
 
 
   "itemgroup.mod.cosmic_items": "Cosmic Items",
-  "itemgroup.mod.cosmic_blocks": "Cosmic Blocks"
+  "itemgroup.mod.cosmic_blocks": "Cosmic Blocks",
+
+  "tooltip.mod.starlight_ashes.tooltip": "§eA very §cPOWERFUL §efuel source"
 
 
 }
