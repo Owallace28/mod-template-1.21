@@ -6,6 +6,7 @@ import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.ShapedRecipe;
 import net.minecraft.recipe.ShapelessRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
@@ -39,6 +40,49 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('R', ModItems.RAW_GALAXITE)
                 .criterion(hasItem(ModItems.RAW_GALAXITE), conditionsFromItem(ModItems.RAW_GALAXITE))
                 .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.GALAXITE_SWORD)
+                .pattern("G")
+                .pattern("G")
+                .pattern("S")
+                .input('G', ModItems.GALAXITE)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.GALAXITE), conditionsFromItem(ModItems.GALAXITE))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.GALAXITE_PICKAXE)
+                .pattern("GGG")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('G', ModItems.GALAXITE)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.GALAXITE), conditionsFromItem(ModItems.GALAXITE))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.GALAXITE_SHOVEL)
+                .pattern("G")
+                .pattern("S")
+                .pattern("S")
+                .input('G', ModItems.GALAXITE)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.GALAXITE), conditionsFromItem(ModItems.GALAXITE))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.GALAXITE_AXE)
+                .pattern("GG")
+                .pattern("GS")
+                .pattern(" S")
+                .input('G', ModItems.GALAXITE)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.GALAXITE), conditionsFromItem(ModItems.GALAXITE))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.GALAXITE_HOE)
+                .pattern("GG")
+                .pattern(" S")
+                .pattern(" S")
+                .input('G', ModItems.GALAXITE)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.GALAXITE), conditionsFromItem(ModItems.GALAXITE))
+                .offerTo(recipeExporter);
+
+
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RAW_GALAXITE, 9)
                 .input(ModBlocks.RAW_GALAXITE_BLOCK)

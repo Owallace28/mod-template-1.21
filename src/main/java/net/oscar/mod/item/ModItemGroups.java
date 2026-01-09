@@ -18,6 +18,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.GALAXITE);
                         entries.add(ModItems.RAW_GALAXITE);
+
                         entries.add(ModItems.STARLIGHT_ASHES);
 
 
@@ -35,6 +36,36 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.GALAXITE_ORE);
                         entries.add(ModBlocks.GALAXITE_DEEPSLATE_ORE);
+
+
+
+
+
+
+                    }).build());
+        public static final ItemGroup COSMIC_TOOLS_GROUP = Registry.register(Registries.ITEM_GROUP,
+                Identifier.of(Mod.MOD_ID, "cosmic_tools"),
+                FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.GALAXITE_PICKAXE))
+                        .displayName(Text.translatable("itemgroup.mod.cosmic_tools"))
+                        .entries((displayContext, entries) -> {
+
+                            entries.add(ModItems.GALAXITE_PICKAXE);
+                            entries.add(ModItems.GALAXITE_SHOVEL);
+                            entries.add(ModItems.GALAXITE_AXE);
+                            entries.add(ModItems.GALAXITE_HOE);
+
+
+
+
+
+                        }).build());
+    public static final ItemGroup COSMIC_WEAPONS_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(Mod.MOD_ID, "cosmic_weapons"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.GALAXITE_SWORD))
+                    .displayName(Text.translatable("itemgroup.mod.cosmic_weapons"))
+                    .entries((displayContext, entries) -> {
+
+                        entries.add(ModItems.GALAXITE_SWORD);
 
 
 

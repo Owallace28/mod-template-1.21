@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 import net.oscar.mod.block.ModBlocks;
+import net.oscar.mod.tags.ModTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -28,5 +29,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.GALAXITE_BLOCK)
                 .add(ModBlocks.RAW_GALAXITE_BLOCK)
                 .add(ModBlocks.GALAXITE_ORE);
+
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_GALAXITE_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
     }
 }

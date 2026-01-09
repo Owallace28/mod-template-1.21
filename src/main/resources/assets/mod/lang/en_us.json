@@ -3,6 +3,13 @@
   "item.mod.raw_galaxite": "§dRaw Galaxite",
   "item.mod.starlight_ashes": "§dStarlight Ashes",
 
+  "item.mod.galaxite_sword": "§dGalaxite Sword",
+  "item.mod.galaxite_pickaxe": "§dGalaxite Pickaxe",
+  "item.mod.galaxite_shovel": "§dGalaxite Shovel",
+  "item.mod.galaxite_axe": "§dGalaxite Axe",
+  "item.mod.galaxite_hoe": "§dGalaxite Hoe",
+
+
 
   "block.mod.galaxite_block": "§dBlock of Galaxite",
   "block.mod.raw_galaxite_block": "§dBlock of Raw Galaxite",
@@ -14,6 +21,8 @@
 
   "itemgroup.mod.cosmic_items": "Cosmic Items",
   "itemgroup.mod.cosmic_blocks": "Cosmic Blocks",
+  "itemgroup.mod.cosmic_tools": "Cosmic Tools",
+  "itemgroup.mod.cosmic_weapons": "Cosmic Weapons",
 
   "tooltip.mod.starlight_ashes.tooltip": "§eA very §cPOWERFUL §efuel source"
 

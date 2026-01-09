@@ -29,5 +29,11 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.STARLIGHT_ASHES, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.GALAXITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GALAXITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GALAXITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GALAXITE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GALAXITE_HOE, Models.HANDHELD);
+
     }
 }
