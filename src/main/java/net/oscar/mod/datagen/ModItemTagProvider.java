@@ -45,6 +45,13 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.GALAXITE_LEGGINGS)
                 .add(ModItems.GALAXITE_BOOTS);
 
+        getOrCreateTagBuilder(ItemTags.ARMOR_ENCHANTABLE)
+                .add(ModItems.GALAXITE_HELMET)
+                .add(ModItems.GALAXITE_CHESTPLATE)
+                .add(ModItems.GALAXITE_LEGGINGS)
+                .add(ModItems.GALAXITE_BOOTS);
+
+
 
     }
 
