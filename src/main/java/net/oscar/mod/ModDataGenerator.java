@@ -2,10 +2,7 @@ package net.oscar.mod;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
-import net.oscar.mod.datagen.ModBlockTagProvider;
-import net.oscar.mod.datagen.ModLootTableProvider;
-import net.oscar.mod.datagen.ModModelProvider;
-import net.oscar.mod.datagen.ModRecipeProvider;
+import net.oscar.mod.datagen.*;
 
 public class ModDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -13,6 +10,7 @@ public class ModDataGenerator implements DataGeneratorEntrypoint {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
 		pack.addProvider(ModBlockTagProvider::new);
+		pack.addProvider(ModItemTagProvider::new);
 		pack.addProvider(ModLootTableProvider::new);
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModRecipeProvider::new);

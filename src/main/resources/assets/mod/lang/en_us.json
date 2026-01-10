@@ -9,6 +9,11 @@
   "item.mod.galaxite_axe": "§dGalaxite Axe",
   "item.mod.galaxite_hoe": "§dGalaxite Hoe",
 
+  "item.mod.galaxite_helmet": "§dGalaxite Helmet",
+  "item.mod.galaxite_chestplate": "§dGalaxite Chestplate",
+  "item.mod.galaxite_leggings": "§dGalaxite Leggings",
+  "item.mod.galaxite_boots": "§dGalaxite Boots",
+
 
 
   "block.mod.galaxite_block": "§dBlock of Galaxite",
@@ -23,6 +28,7 @@
   "itemgroup.mod.cosmic_blocks": "Cosmic Blocks",
   "itemgroup.mod.cosmic_tools": "Cosmic Tools",
   "itemgroup.mod.cosmic_weapons": "Cosmic Weapons",
+  "itemgroup.mod.cosmic_armor": "Cosmic Armor",
 
   "tooltip.mod.starlight_ashes.tooltip": "§eA very §cPOWERFUL §efuel source"
 

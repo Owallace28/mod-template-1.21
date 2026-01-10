@@ -6,6 +6,7 @@ import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Model;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.ArmorItem;
 import net.oscar.mod.block.ModBlocks;
 import net.oscar.mod.item.ModItems;
 
@@ -34,6 +35,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.GALAXITE_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.GALAXITE_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.GALAXITE_HOE, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.GALAXITE_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.GALAXITE_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.GALAXITE_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.GALAXITE_BOOTS));
 
     }
 }

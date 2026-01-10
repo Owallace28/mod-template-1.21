@@ -73,6 +73,23 @@ public class ModItemGroups {
 
 
                     }).build());
+    public static final ItemGroup COSMIC_ARMOR_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(Mod.MOD_ID, "cosmic_armor"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.GALAXITE_CHESTPLATE))
+                    .displayName(Text.translatable("itemgroup.mod.cosmic_armor"))
+                    .entries((displayContext, entries) -> {
+
+                        entries.add(ModItems.GALAXITE_HELMET);
+                        entries.add(ModItems.GALAXITE_CHESTPLATE);
+                        entries.add(ModItems.GALAXITE_LEGGINGS);
+                        entries.add(ModItems.GALAXITE_BOOTS);
+
+
+
+
+
+
+                    }).build());
 
 
     public static void registerItemGroups() {

@@ -8,6 +8,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.oscar.mod.Mod;
+import net.oscar.mod.item.custom.ModArmorItem;
 
 import java.util.List;
 
@@ -42,6 +43,22 @@ public class ModItems {
     public static final Item GALAXITE_HOE = registerItem("galaxite_hoe",
             new HoeItem(ModToolMaterials.GALAXITE, new Item.Settings()
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.GALAXITE, 0, -3.0f))));
+
+    public static final Item GALAXITE_HELMET = registerItem("galaxite_helmet",
+            new ModArmorItem(ModArmorMaterials.GALAXITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(45))));
+
+    public static final Item GALAXITE_CHESTPLATE = registerItem("galaxite_chestplate",
+            new ArmorItem(ModArmorMaterials.GALAXITE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(45))));
+
+    public static final Item GALAXITE_LEGGINGS = registerItem("galaxite_leggings",
+            new ArmorItem(ModArmorMaterials.GALAXITE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(45))));
+
+    public static final Item GALAXITE_BOOTS = registerItem("galaxite_boots",
+            new ArmorItem(ModArmorMaterials.GALAXITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(45))));
 
 
     private static Item registerItem(String name, Item item) {

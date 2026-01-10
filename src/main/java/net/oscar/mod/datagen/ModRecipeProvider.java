@@ -82,6 +82,37 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.GALAXITE), conditionsFromItem(ModItems.GALAXITE))
                 .offerTo(recipeExporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.GALAXITE_HELMET)
+                .pattern("GGG")
+                .pattern("G G")
+                .pattern("   ")
+                .input('G', ModItems.GALAXITE)
+                .criterion(hasItem(ModItems.GALAXITE), conditionsFromItem(ModItems.GALAXITE))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.GALAXITE_CHESTPLATE)
+                .pattern("G G")
+                .pattern("GGG")
+                .pattern("GGG")
+                .input('G', ModItems.GALAXITE)
+                .criterion(hasItem(ModItems.GALAXITE), conditionsFromItem(ModItems.GALAXITE))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.GALAXITE_LEGGINGS)
+                .pattern("GGG")
+                .pattern("G G")
+                .pattern("G G")
+                .input('G', ModItems.GALAXITE)
+                .criterion(hasItem(ModItems.GALAXITE), conditionsFromItem(ModItems.GALAXITE))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.GALAXITE_BOOTS)
+                .pattern("   ")
+                .pattern("G G")
+                .pattern("G G")
+                .input('G', ModItems.GALAXITE)
+                .criterion(hasItem(ModItems.GALAXITE), conditionsFromItem(ModItems.GALAXITE))
+                .offerTo(recipeExporter);
+
+
+
 
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RAW_GALAXITE, 9)
