@@ -1,0 +1,5 @@
+// 1.21	2026-01-10T13:28:32.0856397	Mod/Tags for minecraft:block
+a249c46329a41538f49a564e1f14338aaf1be5a0 data\mod\tags\block\needs_galaxite_tool.json
+7a1084c1a4f9a3701cde1a81c1880fed189dc4c1 data\minecraft\tags\block\mineable\pickaxe.json
+728e36f63371539171277f39979e24e2a3c40394 data\minecraft\tags\block\needs_iron_tool.json
+dc1c1cc5fcd81ec7cc334f5118cbbf819fb02bc3 data\minecraft\tags\block\needs_diamond_tool.json

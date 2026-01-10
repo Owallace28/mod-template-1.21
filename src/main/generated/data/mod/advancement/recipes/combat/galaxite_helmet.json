@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_galaxite": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mod:galaxite"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mod:galaxite_helmet"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_galaxite"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mod:galaxite_helmet"
+    ]
+  }
+}
