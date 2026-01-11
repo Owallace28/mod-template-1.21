@@ -10,14 +10,17 @@ import net.oscar.mod.world.ModPlacedFeatures;
 
 public class ModDataGenerator implements DataGeneratorEntrypoint {
 	@Override
-	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
-		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
+	public void onInitializeDataGenerator(FabricDataGenerator generator) {
+		FabricDataGenerator.Pack pack = generator.createPack();
 
 		pack.addProvider(ModBlockTagProvider::new);
 		pack.addProvider(ModItemTagProvider::new);
 		pack.addProvider(ModLootTableProvider::new);
 		pack.addProvider(ModModelProvider::new);
-		pack.addProvider(ModRecipeProvider::new);
+
+		// Must use lambda for constructor with parameters
+		pack.addProvider((output, registries) -> new ModRecipeProvider(output, registries));
+
 		pack.addProvider(ModRegistryDataGenerator::new);
 	}
 
@@ -27,3 +30,4 @@ public class ModDataGenerator implements DataGeneratorEntrypoint {
 		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
 	}
 }
+

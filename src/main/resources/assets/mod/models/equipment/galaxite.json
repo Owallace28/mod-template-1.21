@@ -1,0 +1,24 @@
+{
+  "layers": {
+    "wolf_body": [
+      {
+        "texture": "mod:galaxite"
+      }
+    ],
+    "horse_body": [
+      {
+        "texture": "mod:galaxite"
+      }
+    ],
+    "humanoid": [
+      {
+        "texture": "mod:galaxite"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "mod:galaxite"
+      }
+    ]
+  }
+}

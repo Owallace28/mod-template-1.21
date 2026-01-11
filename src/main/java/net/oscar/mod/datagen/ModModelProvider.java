@@ -6,8 +6,12 @@ import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Model;
 import net.minecraft.data.client.Models;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
+import net.minecraft.util.Identifier;
+import net.oscar.mod.Mod;
 import net.oscar.mod.block.ModBlocks;
+import net.oscar.mod.item.ModArmorMaterials;
 import net.oscar.mod.item.ModItems;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -36,10 +40,14 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.GALAXITE_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.GALAXITE_HOE, Models.HANDHELD);
 
-        itemModelGenerator.registerArmor(((ArmorItem) ModItems.GALAXITE_HELMET));
-        itemModelGenerator.registerArmor(((ArmorItem) ModItems.GALAXITE_CHESTPLATE));
-        itemModelGenerator.registerArmor(((ArmorItem) ModItems.GALAXITE_LEGGINGS));
-        itemModelGenerator.registerArmor(((ArmorItem) ModItems.GALAXITE_BOOTS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.GALAXITE_HELMET), Identifier.of(Mod.MOD_ID, "galaxite"),
+                ModArmorMaterials.GALAXITE, EquipmentSlot.HEAD);
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.GALAXITE_CHESTPLATE), Identifier.of(Mod.MOD_ID, "galaxite"),
+                ModArmorMaterials.GALAXITE, EquipmentSlot.CHEST);
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.GALAXITE_LEGGINGS), Identifier.of(Mod.MOD_ID, "galaxite"),
+                ModArmorMaterials.GALAXITE, EquipmentSlot.LEGS);
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.GALAXITE_BOOTS), Identifier.of(Mod.MOD_ID, "galaxite"),
+                ModArmorMaterials.GALAXITE, EquipmentSlot.FEET);
 
     }
 }
